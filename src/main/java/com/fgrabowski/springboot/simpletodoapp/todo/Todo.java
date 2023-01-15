@@ -13,7 +13,6 @@ public class Todo {
         this.targetDate = targetDate;
         this.done = done;
     }
-
     private int id;
     private String username;
     private String description;
