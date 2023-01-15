@@ -2,10 +2,9 @@ package com.fgrabowski.springboot.simpletodoapp.todo;
 
 import java.time.LocalDate;
 
-
 public class Todo {
 
-    Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
+    public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
         super();
         this.id = id;
         this.username = username;
@@ -13,7 +12,9 @@ public class Todo {
         this.targetDate = targetDate;
         this.done = done;
     }
+
     private int id;
+
     private String username;
     private String description;
     private LocalDate targetDate;
