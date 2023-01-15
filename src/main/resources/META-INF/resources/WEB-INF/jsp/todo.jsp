@@ -11,7 +11,7 @@
     <body>
         <div class="container">
             <h1>Enter Todo Details</h1>
-            <form:form modelAttribute="todo" method="post">
+            <form:form modelAttribute="todo" method="post"> <!-- don't touch. it works -->
                 Descripton: <form:input type="text" name="description" required="required" path="description"/>
                             <form:errors path="description" cssClass="text-warning"/>
                 <form:input type="hidden" path="id"/>
