@@ -1,5 +1,7 @@
 package com.fgrabowski.springboot.simpletodoapp.todo;
 
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDate;
 
 public class Todo {
@@ -16,7 +18,10 @@ public class Todo {
     private int id;
 
     private String username;
+
+    @Size(min=5, max=50, message = "Description must be >5 and <50 characters.")
     private String description;
+
     private LocalDate targetDate;
     private boolean done;
 
