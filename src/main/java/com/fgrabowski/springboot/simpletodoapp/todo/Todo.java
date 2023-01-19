@@ -1,9 +1,14 @@
 package com.fgrabowski.springboot.simpletodoapp.todo;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 
+import javax.annotation.processing.Generated;
 import java.time.LocalDate;
 
+@Entity
 public class Todo {
 
     public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
@@ -15,6 +20,8 @@ public class Todo {
         this.done = done;
     }
 
+    @Id
+    @GeneratedValue
     private int id;
 
     private String username;
@@ -24,6 +31,10 @@ public class Todo {
 
     private LocalDate targetDate;
     private boolean done;
+
+    public Todo() {
+
+    }
 
     public int getId() {
         return id;
