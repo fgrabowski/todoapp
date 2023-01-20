@@ -1,7 +1,7 @@
 TO DO WEBAPP JAVA
 ---
 Used Technologies:
-> Java 17, Maven, Spring, Spring Boot, Spring Security, Spring JPA, H2 Database, Bootstrap, HTML, CSS
+> Java 17, Maven, Spring, Spring Boot, Spring Security, Spring JPA, Docker, MySQL, Bootstrap, HTML, CSS
 
 PROJECT OVERVIEW
 ---
